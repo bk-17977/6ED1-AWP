@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Join Us Now</title>
+    <link rel="shortcut icon" href="./images/favicon.svg" type="image/x-icon" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <div class="container-fluid mainContent">
+      <div class="row d-flex align-items-center">
+        <div class="col-lg-6" class="sideImg">
+          <img src="./images/join.svg" alt="" />
+        </div>
+        <div
+          class="col-lg-6 h-100 d-flex align-items-center justify-content-center my-5"
+        >
+          <div class="form-content">
+            <h1 class="mb-5">Let's Get Started,</h1>
+            <form id="registrationForm">
+              <div class="row">
+                <div class="col-md-6 mb-3">
+                  <label for="firstNameInp" class="form-label">
+                    First Name
+                    <span title="Mandatory field"
+                      ><span title="Mandatory field">*</span></span
+                    >
+                  </label>
+                  <input
+                    type="text"
+                    class="form-control uidHelper"
+                    id="firstNameInp"
+                  />
+                  <span id="firstNameErr" class="form-text error">
+                    First name shouldn't be empty.
+                  </span>
+                </div>
+                <div class="col-md-6 mb-3">
+                  <label for="lastNameErr" class="form-label">
+                    Last Name
+                    <span title="Mandatory field">*</span>
+                  </label>
+                  <input
+                    type="text"
+                    class="form-control uidHelper"
+                    id="lastNameInp"
+                  />
+                  <span id="lastNameErr" class="form-text error"
+                    >Last name shouldn't be empty.</span
+                  >
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="emailInp" class="form-label">
+                  Email address
+                  <span title="Mandatory field">*</span>
+                </label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="emailInp"
+                  aria-describedby="emailHelp"
+                />
+                <span id="emailErr" class="form-text error"
+                  >Email address shouldn't be empty.</span
+                >
+              </div>
+              <div class="mb-3">
+                <label for="userIdInp" class="form-label">
+                  User Id
+                  <span title="Mandatory field">*</span>
+                </label>
+                <input type="text" class="form-control" id="userIdInp" />
+                <span id="userIdErr" class="form-text error"
+                  >UserId shouldn't be empty.</span
+                >
+              </div>
+              <div class="mb-3">
+                <label for="passInp" class="form-label">
+                  Password
+                  <span title="Mandatory field">*</span>
+                </label>
+                <input type="password" class="form-control" id="passInp" />
+                <span id="passwordErr" class="form-text error"
+                  >Password shouldn't be empty.</span
+                >
+              </div>
+              <div class="mb-3">
+                <label for="conPassInp" class="form-label">
+                  Confirm Password
+                  <span title="Mandatory field">*</span>
+                </label>
+                <input type="password" class="form-control" id="conPassInp" />
+                <span id="conPasswordErr" class="form-text error">
+                  Confirm Password shouldn't be empty.
+                </span>
+              </div>
+              <div class="mb-3">
+                <label for="mobileInp" class="form-label">
+                  Mobile number
+                  <span title="Mandatory field">*</span>
+                </label>
+                <input type="text" class="form-control" id="mobileInp" />
+                <span id="mobileNumberErr" class="form-text error"
+                  >Mobile number shouldn't be empty.</span
+                >
+              </div>
+              <div class="mb-3">
+                <label for="gender" class="form-label"
+                  >Gender<span title="Mandatory field">*</span></label
+                >
+                <div class="d-flex">
+                  <div class="form-radio mx-2">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="gender"
+                      value="female"
+                    />
+                    <label class="form-check-label" for="male">Male</label>
+                  </div>
+                  <div class="form-check">
+                    <label class="form-check-label" for="female">Female</label>
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="gender"
+                      value="female"
+                    />
+                  </div>
+                </div>
+                <span id="genderErr" class="form-text error"
+                  >Please select your gender.</span
+                >
+              </div>
+
+              <div class="mb-3">
+                <label for="addressInp" class="form-label">
+                  Address
+                  <span title="Mandatory field">*</span>
+                </label>
+                <textarea
+                  rows="5"
+                  class="form-control"
+                  id="addressInp"
+                ></textarea>
+                <span id="addressErr" class="form-text error"
+                  >Address shouldn't be empty.</span
+                >
+              </div>
+              <button type="submit" id="submitBtn" class="btn btn-primary mr-5">
+                Submit
+              </button>
+              <button type="reset" class="btn btn-secondary">Reset</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
